@@ -8,7 +8,7 @@ llm:
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
   # request_timeout: 180.0
-  # api_base: https://<instance>.openai.azure.com
+  api_base: http://localhost:11434/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
   # deployment_name: <azure_model_deployment_name>
@@ -37,8 +37,8 @@ embeddings:
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
-    model: text-embedding-3-small
-    # api_base: https://<instance>.openai.azure.com
+    model: nomic-embed-text
+    api_base: http://localhost:11434/api
     # api_version: 2024-02-15-preview
     # organization: <organization_id>
     # deployment_name: <azure_model_deployment_name>
@@ -59,7 +59,7 @@ input:
   file_type: text # or csv
   base_dir: "input"
   file_encoding: utf-8
-  file_pattern: ".*\\.txt$"
+  file_pattern: ".*\\.md$"
 
 cache:
   type: file # or blob

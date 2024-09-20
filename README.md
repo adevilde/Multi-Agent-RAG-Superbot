@@ -34,12 +34,12 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 
 ### 2. Requirements
 
-litellm[proxy]
-ollama
-pyautogen[retrievechat]
-tiktoken
-chainlit
-graphrag
-marker-pdf
-torch
+- litellm[proxy]
+- ollama
+- pyautogen[retrievechat]
+- tiktoken
+- chainlit
+- graphrag
+- marker-pdf
+- torch
 
