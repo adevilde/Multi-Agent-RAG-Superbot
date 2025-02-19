@@ -130,10 +130,10 @@ def multiple():
 
 
 def single():
-    # fname = 'input/AttentionIsAllYouNeed.pdf' #'input/AttentionIsAllYouNeed.pdf'
-    fname = 'input/Classifier_Free_Diffusion_Guidance.pdf' #'input/Classifier_Free_Diffusion_Guidance.pdf'
+    fname = 'input/AttentionIsAllYouNeed.pdf' #'input/AttentionIsAllYouNeed.pdf'
+    # fname = 'input/Classifier_Free_Diffusion_Guidance.pdf' #'input/Classifier_Free_Diffusion_Guidance.pdf'
     model_lst = load_all_models()
-    full_text, images, out_meta = convert_single_pdf(fname, model_lst, max_pages=None, langs=None, batch_multiplier=2, start_page=None)
+    full_text, images, out_meta = convert_single_pdf(fname, model_lst, max_pages=None, langs=None, batch_multiplier=1, start_page=None)
 
     fname = os.path.basename(fname)
 
