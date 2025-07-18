@@ -14,7 +14,7 @@ pip install 'litellm[proxy]'
 pip install ollama
 
 # Microsoft AutoGen
-pip install pyautogen "pyautogen[retrievechat]" 
+pip install ag2 "ag2[retrievechat]" 
 
 # Microsoft GraphRAG
 pip install graphrag
@@ -36,7 +36,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 
 - litellm[proxy]
 - ollama
-- pyautogen[retrievechat]
+- ag2[retrievechat]
 - tiktoken
 - chainlit
 - graphrag
